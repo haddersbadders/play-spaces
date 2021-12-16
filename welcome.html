@@ -1,0 +1,53 @@
+<html>
+  <head>
+
+    <!-- <style media="screen">
+      background-color: #2bc4ff;
+    </style> -->
+<link rel="stylesheet" href="style.css">
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+     <!-- <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> -->
+
+
+
+	 <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115313066-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115313066-15');
+</script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+<img id="middlewood-road" src="images/middlewood-road.png">
+        </a-assets>
+
+      <!-- <a-entity environment="preset: forest; dressingAmount: 500"></a-entity> -->
+
+       <a-sky id="sky" src="#middlewood-road" rotation="0 -70 0"></a-sky>
+
+
+      <a-entity id="welcometxt" rotation="0 0 0" scale="1 1 1" position="-7.73815 1.89008 -10.41435"
+      geometry="primitive: plane; width: 5; height: 3"
+      material="color: #000000; ambientOcclusionMapIntensity: 1; blending: normal; opacity: 0.75"
+      text="value: Welcome to the virtual Park Tour!\n ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 0; wrapCount: 16"></a-entity>
+
+      <a-entity id="intructionstxt1" rotation="0 0 0" scale="4 4 4" position="-1.53905 1.93916 -8.2751"
+      geometry="primitive: plane; width: 1.25; height: 0.595"
+      material="color: #000000; ambientOcclusionMapIntensity: 1; blending: normal; opacity: 0.75"
+      text="value: Navigate through the scenes using the thumbnail images below.\n ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 1"></a-entity>
+
+      <a-entity id="intructionstxt2" rotation="0 0 0" scale="4 4 4" position="4.20414 1.89969 -8.48759"
+      geometry="primitive: plane; width: 1.25; height: 0.595"
+      material="color: #000000; ambientOcclusionMapIntensity: 1; blending: normal; opacity: 0.75"
+      text="value: In each scene you'll find panels with information, so make sure you read these. \n \n Some scenes may have audio and video, so look out for this and make sure you watch and listen! ; align: center; baseline: center; anchor: center; alphaTest: 0.5; height: 1"></a-entity>
+
+
+     </a-scene>
+  </body>
+</html>

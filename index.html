@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exploring Play Spaces | The University of Sheffield's School of Education</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Add the slick-theme.css if you want default styling -->
+
+<link rel="stylesheet" href="master.css">
+
+<script type="text/javascript">
+// 3 ways to load a document into an iframe using JavaScript
+// from www.dyn-web.com/tutorials/iframes/load/
+function setIframeSrc(id, url) {
+    document.getElementById(id).src = url;
+}
+
+function setIframeLoc(nm, url) {
+    window.frames[nm].location = url;
+}
+
+function replaceIframeURL(nm, url) {
+    window.frames[nm].location.replace(url);
+}
+
+
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115313066-15"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115313066-15');
+</script>
+  </head>
+  <body>
+<div class="page">
+
+<!-- <header id="banner">
+  <div class="container">
+    <h1>VR App v0.1</h1>
+  </div>
+
+</header> -->
+<div class="vr-box">
+  <iframe name="vrbox" id="vrbox" src="welcome.html" width="100%" height="100%"></iframe>
+</div>
+
+<div class="nav_thumbs container-fluid" id="vrnav">
+  <div class="row">
+
+    <div class="col"><div class="vr_thumb active">
+      <a href="welcome.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+      <img src="images/thumbs/middlewood-road.jpg" alt="Welcome screen">
+      <p>Welcome and Instructions</p>
+      </a>
+    </div>
+  </div>
+      <div class="col"><div class="vr_thumb">
+        <a href="1-pond-ducks.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/1-pond-ducks.jpg" alt="Pond and ducks">
+        <p>The Pond and Ducks</p>
+        </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="2-playground.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/2-playground.jpg" alt="playground">
+        <p>Playground</p>
+      </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="3-gates.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/3-gates.jpg" alt="Gate you’ll never walk alone">
+        <p>Gate "you’ll never walk alone"</p>
+      </a>
+      </div>
+    </div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="4-junior-library.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/4-junior-library.jpg" alt="Pagoda">
+        <p>Junior Library</p>
+      </a>
+      </div>
+    </div>
+
+    <div class="col"><div class="vr_thumb">
+      <a href="5-graffiti.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+      <img src="images/thumbs/5-graffiti.jpg" alt="Pagoda">
+      <p>Graffiti</p>
+    </a>
+    </div>
+  </div>
+
+
+
+      <div class="col"><div class="vr_thumb">
+        <a href="6-lion.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/6-lion.jpg" alt="lion fountainhead in walled garden">
+        <p>Lion Fountainhead in Walled Garden</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="7-secret-garden.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/7-secret-garden.jpg" alt="Secret Garden">
+        <p>Secret Bit of Secret Garden</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="8-boat-den.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/8-boat-den.jpg" alt="Boat and Den Features">
+        <p>Boat and Den Features</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="9-inside-den.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/9-inside-den.jpg" alt="inside the den">
+        <p>Inside the Den</p>
+      </a>
+      </div></div>
+
+      <div class="col"><div class="vr_thumb">
+        <a href="10-political-graffiti.html" target="vrbox" onclick="setIframeSrc('vrbox', this.href); return false">
+        <img src="images/thumbs/10-political-graffiti.jpg" alt="political graffiti and the school">
+        <p>Political Graffiti and the School</p>
+      </a>
+      </div></div>
+
+
+        </div>
+</div>
+
+</div>
+
+
+  </body>
+
+  <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("vrnav");
+var btns = header.getElementsByClassName("vr_thumb");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+
+function preloadImages(array) {
+  if (!preloadImages.list) {
+      preloadImages.list = [];
+  }
+  var list = preloadImages.list;
+  for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.onload = function() {
+          var index = list.indexOf(this);
+          if (index !== -1) {
+              // remove image from the array once it's loaded
+              // for memory consumption reasons
+              list.splice(index, 1);
+          }
+      }
+      list.push(img);
+      img.src = array[i];
+  }
+}
+
+preloadImages(["images/1-pond-ducks.jpg", "images/10-political-graffiti.jpg", "images/2-playground.jpg", "images/3-gates.jpg", "images/4-junior-library.jpg", "images/5-graffiti.jpg", "images/6-lion.jpg", "images/7-secret-garden.jpg", "images/8-boat-den.jpg", "images/9-inside-den.jpg", "images/information-button.png", "images/middlewood-road.png"]);
+
+
+</script>
+
+</html>

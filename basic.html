@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+ <audio id="crickets" src="media/crickets.mp3" preload="auto"></audio>
+
+        </a-assets>
+<a-camera>
+  <a-cursor>
+
+  </a-cursor color="#bbb" position="0 0 -1">
+</a-camera>
+
+
+
+      <a-entity environment="preset: japan"></a-entity>
+
+      <a-sphere color="blue" position="3 1 -5">
+<a-animation attribute="color" from="blue" to="orange" dur="3000" direction="alternate" repeat="indefinate" >
+</a-animation>
+      </a-sphere>
+<a-entity id="thingy" class="clickable" position="0 1.41067 -3.69204" geometry="primitive: box" sound="src: #crickets" on: click"></a-entity>
+
+     </a-scene>
+  </body>
+</html>
